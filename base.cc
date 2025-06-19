@@ -1072,6 +1072,7 @@ BaseCache::access(PacketPtr pkt, CacheBlk *&blk, Cycles &lat,
         //add part
         //if (blk->isWritable()) {
         //    PacketPtr writeclean_pkt = writecleanBlk(blk, pkt->req->getDest(), pkt->id);
+        //    writeclean_pkt->setWriteThrough();
         //    writebacks.push_back(writeclean_pkt);
         //}
         //
